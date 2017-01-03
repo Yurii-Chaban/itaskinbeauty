@@ -1,6 +1,110 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+Theme Name: International Training Academy
+Theme URI: https://github.com/YuriyChaban/itaskinbeauty
+Author: Yuriy Chaban
+Author URI: https://github.com/YuriyChaban/
+Description: Site for International Training Academy (http://itaskinbeauty.com)
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+*/
 
+/*--------------------------------------------------------------
+# Compass reset
+--------------------------------------------------------------*/
 @import "compass/reset";
+
+/*--------------------------------------------------------------
+# import scss files
+--------------------------------------------------------------*/
+@import "variables";
+@import "mixins";
+	/*--------------------------------------------------------------
+	# import fonts
+	--------------------------------------------------------------*/
+	@import "fonts";
+	/*--------------------------------------------------------------
+	# import mobile menu
+	--------------------------------------------------------------*/
+	@import "menu";
+	/*--------------------------------------------------------------
+	# import header
+	--------------------------------------------------------------*/
+	@import "header";
+	/*--------------------------------------------------------------
+	# import footer
+	--------------------------------------------------------------*/
+	@import "footer";
+	/*--------------------------------------------------------------
+	# import home page
+	--------------------------------------------------------------*/
+	@import "home-page";
+	/*--------------------------------------------------------------
+	# import media styles
+	--------------------------------------------------------------*/
+	@import "media";
+
+/*--------------------------------------------------------------
+# General styles
+--------------------------------------------------------------*/
+
+body {
+	font-family: 'Swiss721BT', 'Open Sans', 'Sylfaen', 'Arial', 'Helvetica' sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	background: #fff;
+}
+
+.wrapper {
+	max-width: 1010px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include border-box;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+.direction {
+	@include direction;
+}
+
+.videoWrapper {
+	@include videoWrapper;
+}
+.mapWrapper {
+	@include mapWrapper;
+	border-top: 7px solid #c76666;
+	#mapWrapper {
+		min-height: 755px;
+		height: 100%;
+		width: 100%;
+		min-width: 500px;
+	}
+	.gm-style-iw * {
+		display: block;
+		width: 100%;
+	}
+	.gm-style-iw h4, .gm-style-iw p {
+		margin: 0;
+		padding: 0;
+	}
+	.gm-style-iw a {
+		color: #4272db;
+	}
+}
+.lb-data .lb-details {
+	display: none;
+}
+.map-marker-label {
+	position: absolute;
+	left: 60%;
+	top: 195px;
+	transform: translate(-50%, -50%);
+	color: #ff0000;
+	font: 400 24px / 26px $Swiss721BT;
+	cursor: pointer;
+	z-index: 99999;
+}

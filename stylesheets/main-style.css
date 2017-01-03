@@ -1,7 +1,16 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+Theme Name: International Training Academy
+Theme URI: https://github.com/YuriyChaban/itaskinbeauty
+Author: Yuriy Chaban
+Author URI: https://github.com/YuriyChaban/
+Description: Site for International Training Academy (http://itaskinbeauty.com)
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+*/
+/*--------------------------------------------------------------
+# Compass reset
+--------------------------------------------------------------*/
 /* line 5, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +74,619 @@ a img {
 /* line 116, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# import scss files
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# import fonts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Swiss721BT Roman fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'Swiss721BT';
+  src: url("../resources/Swis721BT/Roman/Swiss721BT-Roman.woff") format("woff"), url("../resources/Swis721BT/Roman/Swiss721BT-Roman.ttf") format("truetype"), url("../resources/Swis721BT/Roman/Swiss721BT-Roman.svg#Swiss721BT-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Swiss721BT';
+  src: url("../resources/Swis721BT/Roman/TT0003M_.eot");
+  src: url("../resources/Swis721BT/Roman/TT0003M_.woff2") format("woff2"), url("../resources/Swis721BT/Roman/TT0003M_.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*--------------------------------------------------------------
+# HelveticaNeueLTPro ThEx fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'HelveticaNeueLTPro';
+  src: url("../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.eot");
+  src: url("../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.woff2") format("woff2"), url("../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.woff") format("woff"), url("../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.ttf") format("truetype"), url("../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.svg#HelveticaNeueLTPro-ThEx") format("svg"), url("../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*--------------------------------------------------------------
+# Sylfaen Regular fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'Sylfaen';
+  src: url("../resources/Sylfaen/Sylfaen.woff") format("woff"), url("../resources/Sylfaen/Sylfaen.ttf") format("truetype"), url("../resources/Sylfaen/Sylfaen.svg#Sylfaen") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sylfaen';
+  src: url("../resources/Sylfaen/sylfaen.eot");
+  src: url("../resources/Sylfaen/sylfaen.woff2") format("woff2"), url("../resources/Sylfaen/sylfaen.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*--------------------------------------------------------------
+# Semantic UI fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'Icon';
+  src: url("../stylesheets/themes/default/assets/fonts/icons.eot") format("eot");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.otf") format("otf");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.svg") format("svg");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.ttf") format("ttf");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.woff") format("woff");
+  src: url("../stylesheets/themes/default/assets/fonts/icons.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/*--------------------------------------------------------------
+# import mobile menu
+--------------------------------------------------------------*/
+/* line 10, ../sass/_menu.scss */
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 40%;
+  left: 0;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 20, ../sass/_menu.scss */
+.container p {
+  font-size: 14px;
+}
+/* line 24, ../sass/_menu.scss */
+.container a {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: rgba(0, 12, 21, 0.65);
+  text-decoration: none;
+  font-size: 27px;
+  overflow: hidden;
+  top: 5px;
+}
+/* line 34, ../sass/_menu.scss */
+.container a:after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 12, 21, 0.65);
+  height: 2px;
+  width: 0%;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  transition: .35s ease;
+}
+/* line 45, ../sass/_menu.scss */
+.container a:hover:after, .container a:focus:after, .container a:active:after {
+  width: 100%;
+}
+
+/* line 53, ../sass/_menu.scss */
+h1 {
+  position: relative;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+}
+
+/* line 59, ../sass/_menu.scss */
+.button_container {
+  position: absolute;
+  top: 50px;
+  right: 5%;
+  height: 15px;
+  width: 38px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+/* line 69, ../sass/_menu.scss */
+.button_container:hover {
+  opacity: .7;
+}
+/* line 96, ../sass/_menu.scss */
+.button_container span {
+  background: #4f4f4f;
+  border: none;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+/* line 107, ../sass/_menu.scss */
+.button_container span:nth-of-type(2) {
+  top: 6px;
+}
+/* line 111, ../sass/_menu.scss */
+.button_container span:nth-of-type(3) {
+  top: 12px;
+}
+
+/* line 117, ../sass/_menu.scss */
+.overlay {
+  position: absolute;
+  background: transparent;
+  top: -44px;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  z-index: 9;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+/* line 131, ../sass/_menu.scss */
+.overlay.open {
+  height: 100%;
+  height: auto;
+}
+/* line 148, ../sass/_menu.scss */
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+/* line 152, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+/* line 155, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+/* line 158, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+/* line 161, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(5) {
+  animation-delay: .55s;
+}
+/* line 164, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(6) {
+  animation-delay: .60s;
+}
+/* line 167, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(7) {
+  animation-delay: .65s;
+}
+/* line 170, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(8) {
+  animation-delay: .70s;
+}
+/* line 173, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(9) {
+  animation-delay: .75s;
+}
+/* line 176, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(10) {
+  animation-delay: .80s;
+}
+/* line 179, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(11) {
+  animation-delay: .85s;
+}
+/* line 182, ../sass/_menu.scss */
+.overlay.open li:nth-of-type(12) {
+  animation-delay: .90s;
+}
+/* line 187, ../sass/_menu.scss */
+.overlay nav {
+  float: right;
+  width: 281px;
+  height: auto;
+  margin-top: 80px;
+  padding: 5px 0 60px;
+  position: relative;
+  top: 44px;
+  right: 0;
+  background-color: #eee;
+  border-radius: 0;
+}
+/* line 199, ../sass/_menu.scss */
+.overlay ul {
+  float: right;
+  width: 220px;
+  list-style: none;
+  padding: 0;
+  margin: 0 20px 0 0;
+  display: inline-block;
+  position: relative;
+  height: auto;
+  text-align: right;
+}
+/* line 210, ../sass/_menu.scss */
+.overlay ul li {
+  display: block;
+  min-height: 20px;
+  position: relative;
+  text-align: right;
+  opacity: 0;
+}
+/* line 217, ../sass/_menu.scss */
+.overlay ul li a {
+  display: block;
+  position: relative;
+  font: 300 18px/38px "Swiss721BT", sans-serif;
+  color: #505050;
+  text-decoration: none;
+  overflow: hidden;
+}
+/* line 225, ../sass/_menu.scss */
+.overlay ul li a:hover {
+  color: #ce4545;
+}
+/* line 230, ../sass/_menu.scss */
+.overlay ul li a.desctop-menu-active {
+  color: #ce4545;
+}
+/* line 237, ../sass/_menu.scss */
+.overlay .mobile-services li a {
+  font: 700 26px/39px "Swiss721BT", sans-serif;
+  color: #c76666;
+  text-transform: uppercase;
+}
+/* line 244, ../sass/_menu.scss */
+.overlay .mobile-main-menu {
+  margin-top: 40px;
+}
+/* line 247, ../sass/_menu.scss */
+.overlay .mobile-main-menu li a {
+  color: #454545;
+  font: 700 22px/32px "Swiss721BT", sans-serif;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+/*--------------------------------------------------------------
+# import header
+--------------------------------------------------------------*/
+/* line 1, ../sass/_header.scss */
+header {
+  position: absolute;
+  width: 100%;
+  height: 145px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("../images/mobile-header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*---------------------------------------------------*/
+  /*---------------------------------------------------*/
+  /*---------------------------------------------------*/
+  /*---------------------------------------------------*/
+}
+/* line 15, ../sass/_header.scss */
+header .top-nav .desctop-phone,
+header .top-nav .dectop-search,
+header .top-nav .lenguages-block {
+  display: none;
+}
+/* line 21, ../sass/_header.scss */
+header .top-nav .site-main-sign {
+  width: 140px;
+  float: right;
+  margin: 5px 0 0;
+  text-align: right;
+  color: #566066;
+  font: 400 14px/15px "Swiss721BT", sans-serif;
+}
+/* line 32, ../sass/_header.scss */
+header .call-us-block {
+  float: right;
+  margin: 5px 22% 0 0;
+  vertical-align: middle;
+  clear: both;
+}
+/* line 38, ../sass/_header.scss */
+header .call-us-block .fa {
+  color: #454748;
+  font-size: 27px;
+  line-height: 27px;
+}
+/* line 44, ../sass/_header.scss */
+header #info-mobile {
+  width: 258px;
+  height: auto;
+  background-color: #f39810;
+  box-shadow: 2.4px 4.4px 7px rgba(0, 1, 1, 0.26);
+  clear: none;
+  float: right;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  z-index: 100;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 57, ../sass/_header.scss */
+header #info-mobile a {
+  display: block;
+  margin: 6px auto;
+  padding: 13px 5px;
+  text-align: center;
+}
+/* line 62, ../sass/_header.scss */
+header #info-mobile a .phone {
+  color: black;
+  font: 700 22px/26px "Open Sans", sans-serif;
+}
+/* line 68, ../sass/_header.scss */
+header .call-us-block > label {
+  color: #000;
+  float: right;
+  margin: 5px 0 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 75, ../sass/_header.scss */
+header input {
+  display: none;
+}
+/* line 76, ../sass/_header.scss */
+header input:checked + #info-mobile {
+  display: none;
+}
+/* line 79, ../sass/_header.scss */
+header .desctop-navigation {
+  display: none;
+}
+/* line 84, ../sass/_header.scss */
+header i.icon.angle.down:before {
+  content: "\f107";
+  font-family: 'Icon';
+  font-size: 30px;
+  color: #000;
+}
+
+/*--------------------------------------------------------------
+# import footer
+--------------------------------------------------------------*/
+/* line 1, ../sass/_footer.scss */
+footer {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  padding: 0;
+  background-color: #c76666;
+}
+/* line 7, ../sass/_footer.scss */
+footer .copyright {
+  clear: both;
+  margin: 0 auto;
+  padding: 1px 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #c76666;
+}
+/* line 14, ../sass/_footer.scss */
+footer .copyright .copyright-sign {
+  margin: 0 auto;
+  color: #fff;
+  font: 400 12px/22px "Open Sans", sans-serif;
+}
+/* line 19, ../sass/_footer.scss */
+footer .copyright .copyright-sign a {
+  color: #fff;
+}
+/* line 22, ../sass/_footer.scss */
+footer .copyright .copyright-sign a:hover {
+  text-decoration: underline;
+}
+/* line 26, ../sass/_footer.scss */
+footer .copyright .copyright-sign a:nth-of-type(2) {
+  font: 400 14px/22px "HelveticaNeueLTPro", sans-serif;
+}
+/* line 31, ../sass/_footer.scss */
+footer .copyright .copyright-sign span {
+  font-family: "Swiss721BT";
+  font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+# import home page
+--------------------------------------------------------------*/
+/* line 1, ../sass/_home-page.scss */
+.slider-section {
+  min-height: auto;
+  padding-top: 145px;
+  background-image: url("../images/home-page-slider.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------
+# import media styles
+--------------------------------------------------------------*/
+@media (min-width: 1024px) {
+  /* line 14, ../sass/_media.scss */
+  header .mobile-navigation {
+    display: none;
+  }
+}
+/*--------------------------------------------------------------
+# General styles
+--------------------------------------------------------------*/
+/* line 51, ../sass/main-style.scss */
+body {
+  font-family: 'Swiss721BT', 'Open Sans', 'Sylfaen', 'Arial', 'Helvetica' sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+}
+
+/* line 59, ../sass/main-style.scss */
+.wrapper {
+  max-width: 1010px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* line 67, ../sass/main-style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 70, ../sass/main-style.scss */
+.direction {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  padding: 10px 0;
+  background-color: #5ca7dc;
+}
+/* line 25, ../sass/_mixins.scss */
+.direction .arrow-back {
+  float: left;
+}
+/* line 28, ../sass/_mixins.scss */
+.direction .direction-title {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 31, ../sass/_mixins.scss */
+.direction .direction-title a {
+  color: white;
+  font: 400 15px/22px "Swiss721BT", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 74, ../sass/main-style.scss */
+.videoWrapper {
+  position: relative;
+  margin: 15px auto;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  max-width: 971px;
+  max-height: 527px;
+  overflow: hidden;
+}
+/* line 72, ../sass/_mixins.scss */
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 77, ../sass/main-style.scss */
+.mapWrapper {
+  overflow: hidden;
+  padding-bottom: 56%;
+  position: relative;
+  height: 0;
+  border-top: 7px solid #c76666;
+}
+/* line 45, ../sass/_mixins.scss */
+.mapWrapper iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* line 52, ../sass/_mixins.scss */
+.mapWrapper .map-overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+}
+/* line 80, ../sass/main-style.scss */
+.mapWrapper #mapWrapper {
+  min-height: 755px;
+  height: 100%;
+  width: 100%;
+  min-width: 500px;
+}
+/* line 86, ../sass/main-style.scss */
+.mapWrapper .gm-style-iw * {
+  display: block;
+  width: 100%;
+}
+/* line 90, ../sass/main-style.scss */
+.mapWrapper .gm-style-iw h4, .mapWrapper .gm-style-iw p {
+  margin: 0;
+  padding: 0;
+}
+/* line 94, ../sass/main-style.scss */
+.mapWrapper .gm-style-iw a {
+  color: #4272db;
+}
+
+/* line 98, ../sass/main-style.scss */
+.lb-data .lb-details {
+  display: none;
+}
+
+/* line 101, ../sass/main-style.scss */
+.map-marker-label {
+  position: absolute;
+  left: 60%;
+  top: 195px;
+  transform: translate(-50%, -50%);
+  color: #ff0000;
+  font: 400 24px/26px "Swiss721BT", sans-serif;
+  cursor: pointer;
+  z-index: 99999;
 }
