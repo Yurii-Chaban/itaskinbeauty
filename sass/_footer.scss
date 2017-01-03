@@ -1,20 +1,21 @@
 footer {
 	@include site-container;
 	padding: 0;
-	background-color: #c76666;
+
 
 
 	.copyright {
 		clear: both;
 		margin: 0 auto;
-		padding: 1px 0;
+		padding: 2px 0;
 		text-align: center;
 		@include border-box;
-		background-color: #c76666;
+		background-color: #7c8d94;
+		box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.28);
 		.copyright-sign {
 			margin: 0 auto;
 			color: #fff;
-			font: 400 12px / 22px $OpenSans;
+			font: 400 15px / 22px $OpenSans;
 
 			a {
 				color: #fff;
@@ -24,7 +25,7 @@ footer {
 				}
 
 				&:nth-of-type(2) {
-					font: 400 14px / 22px $HelveticaNeueLTPro;
+					font: 400 15px / 22px $HelveticaNeueLTPro;
 				}
 			}
 

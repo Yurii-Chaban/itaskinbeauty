@@ -6,7 +6,59 @@
 	
 }
 @media (min-width: 768px) {
+	.slider-section {
+		.main-slider {
+			max-width: 940px;
 
+			.slick-list {
+				max-width: 90%;
+				margin: 0 auto;
+			}
+
+			.prev-btn,
+			.next-btn {
+				top: 50%;
+				transform: translateY(-50%);
+				bottom: auto;
+			}
+
+			.slider-content {
+				max-width: 460px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.gallery-section {
+
+		.wrapper {
+			max-width: 1010px;
+			padding: 0 15px;
+		}
+		.gallery-slider {
+
+			.slick-slide {
+				padding: 0 5px;
+			}
+
+			.prev-btn,
+			.next-btn {
+				top: 50%;
+				transform: translateY(-50%);
+				bottom: auto;
+			}
+
+			.img-container {
+				width: 250px;
+				height: 165px;
+
+				img {
+					min-width: 250px;
+					min-height: 165px;
+					height: auto;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) {

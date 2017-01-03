@@ -53,7 +53,7 @@ $('.gallery-slider').slick({
 		settings: {
 			arrows: true,
 			centerMode: true,
-			centerPadding: '20px',
+			centerPadding: '0',
 			slidesToShow: 1
 		}
 	}

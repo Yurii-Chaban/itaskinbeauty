@@ -380,21 +380,22 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: url("../images/mobile-header-bg.png");
+  background-image: url("../images/header-trash.png");
   background-repeat: no-repeat;
+  background-position: 30% 20%;
   background-size: cover;
   /*---------------------------------------------------*/
   /*---------------------------------------------------*/
   /*---------------------------------------------------*/
   /*---------------------------------------------------*/
 }
-/* line 15, ../sass/_header.scss */
+/* line 16, ../sass/_header.scss */
 header .top-nav .desctop-phone,
 header .top-nav .dectop-search,
 header .top-nav .lenguages-block {
   display: none;
 }
-/* line 21, ../sass/_header.scss */
+/* line 22, ../sass/_header.scss */
 header .top-nav .site-main-sign {
   width: 140px;
   float: right;
@@ -403,20 +404,20 @@ header .top-nav .site-main-sign {
   color: #566066;
   font: 400 14px/15px "Swiss721BT", sans-serif;
 }
-/* line 32, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
 header .call-us-block {
   float: right;
   margin: 5px 22% 0 0;
   vertical-align: middle;
   clear: both;
 }
-/* line 38, ../sass/_header.scss */
+/* line 39, ../sass/_header.scss */
 header .call-us-block .fa {
   color: #454748;
   font-size: 27px;
   line-height: 27px;
 }
-/* line 44, ../sass/_header.scss */
+/* line 45, ../sass/_header.scss */
 header #info-mobile {
   width: 258px;
   height: auto;
@@ -433,19 +434,19 @@ header #info-mobile {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 57, ../sass/_header.scss */
+/* line 58, ../sass/_header.scss */
 header #info-mobile a {
   display: block;
   margin: 6px auto;
   padding: 13px 5px;
   text-align: center;
 }
-/* line 62, ../sass/_header.scss */
+/* line 63, ../sass/_header.scss */
 header #info-mobile a .phone {
   color: black;
   font: 700 22px/26px "Open Sans", sans-serif;
 }
-/* line 68, ../sass/_header.scss */
+/* line 69, ../sass/_header.scss */
 header .call-us-block > label {
   color: #000;
   float: right;
@@ -456,19 +457,19 @@ header .call-us-block > label {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 75, ../sass/_header.scss */
+/* line 76, ../sass/_header.scss */
 header input {
   display: none;
 }
-/* line 76, ../sass/_header.scss */
+/* line 77, ../sass/_header.scss */
 header input:checked + #info-mobile {
   display: none;
 }
-/* line 79, ../sass/_header.scss */
+/* line 80, ../sass/_header.scss */
 header .desctop-navigation {
   display: none;
 }
-/* line 84, ../sass/_header.scss */
+/* line 85, ../sass/_header.scss */
 header i.icon.angle.down:before {
   content: "\f107";
   font-family: 'Icon';
@@ -488,39 +489,39 @@ footer {
   background-size: contain;
   background-position: center;
   padding: 0;
-  background-color: #c76666;
 }
 /* line 7, ../sass/_footer.scss */
 footer .copyright {
   clear: both;
   margin: 0 auto;
-  padding: 1px 0;
+  padding: 2px 0;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #c76666;
+  background-color: #7c8d94;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.28);
 }
-/* line 14, ../sass/_footer.scss */
+/* line 15, ../sass/_footer.scss */
 footer .copyright .copyright-sign {
   margin: 0 auto;
   color: #fff;
-  font: 400 12px/22px "Open Sans", sans-serif;
+  font: 400 15px/22px "Open Sans", sans-serif;
 }
-/* line 19, ../sass/_footer.scss */
+/* line 20, ../sass/_footer.scss */
 footer .copyright .copyright-sign a {
   color: #fff;
 }
-/* line 22, ../sass/_footer.scss */
+/* line 23, ../sass/_footer.scss */
 footer .copyright .copyright-sign a:hover {
   text-decoration: underline;
 }
-/* line 26, ../sass/_footer.scss */
+/* line 27, ../sass/_footer.scss */
 footer .copyright .copyright-sign a:nth-of-type(2) {
-  font: 400 14px/22px "HelveticaNeueLTPro", sans-serif;
+  font: 400 15px/22px "HelveticaNeueLTPro", sans-serif;
 }
-/* line 31, ../sass/_footer.scss */
+/* line 32, ../sass/_footer.scss */
 footer .copyright .copyright-sign span {
   font-family: "Swiss721BT";
   font-weight: 400;
@@ -533,17 +534,454 @@ footer .copyright .copyright-sign span {
 .slider-section {
   min-height: auto;
   padding-top: 145px;
+  position: relative;
   background-image: url("../images/home-page-slider.jpg");
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  background-size: cover;
+}
+/* line 11, ../sass/_home-page.scss */
+.slider-section:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+/* line 22, ../sass/_home-page.scss */
+.slider-section .desctop-get-info,
+.slider-section .welcome-desctop {
+  display: none;
+}
+/* line 27, ../sass/_home-page.scss */
+.slider-section .main-slider {
+  margin: 40px auto 120px;
+  padding-bottom: 50px;
+}
+/* line 31, ../sass/_home-page.scss */
+.slider-section .main-slider .prev-btn,
+.slider-section .main-slider .next-btn {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 2px solid #566273;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* line 44, ../sass/_home-page.scss */
+.slider-section .main-slider .prev-btn .fa,
+.slider-section .main-slider .next-btn .fa {
+  font-size: 27px;
+  line-height: 23px;
+  text-align: center;
+  color: #566273;
+}
+/* line 52, ../sass/_home-page.scss */
+.slider-section .main-slider .prev-btn {
+  left: 0;
+}
+/* line 56, ../sass/_home-page.scss */
+.slider-section .main-slider .next-btn {
+  right: 0;
+}
+/* line 62, ../sass/_home-page.scss */
+.slider-section .slider-content .content-title {
+  text-shadow: 0 0 8px rgba(252, 252, 252, 0.75);
+  color: #ed0808;
+  font: 400 34px/38px "Swiss721BT", sans-serif;
+}
+/* line 68, ../sass/_home-page.scss */
+.slider-section .slider-content .program-list {
+  padding-left: 10px;
+}
+/* line 70, ../sass/_home-page.scss */
+.slider-section .slider-content .program-list p {
+  text-shadow: 0 0 8px rgba(252, 252, 252, 0.75);
+  color: #ed0808;
+  font: 400 19px/22px "Swiss721BT", sans-serif;
+}
+/* line 78, ../sass/_home-page.scss */
+.slider-section .welcome-text {
+  position: relative;
+  background-color: #dee3e5;
+  background-size: cover;
+}
+/* line 83, ../sass/_home-page.scss */
+.slider-section .welcome-text:before {
+  position: absolute;
+  content: "";
+  top: -85px;
+  left: 0;
+  width: 100%;
+  height: 87px;
+  background-image: url("../images/get-info-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 12% 20%;
+  z-index: 0;
+}
+/* line 96, ../sass/_home-page.scss */
+.slider-section .welcome-text .mobile-get-info {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 5px 0 15px;
+}
+/* line 100, ../sass/_home-page.scss */
+.slider-section .welcome-text .mobile-get-info .title {
+  margin: 5px 0;
+  padding: 8px 0 8px 8px;
+  color: #ffffff;
+  font: 400 30px/32px "Swiss721BT", sans-serif;
+  background-color: #ec7070;
+  /* IE9, iOS 3.2+ */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiNlMGRlZGUiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMDEiLz48c3RvcCBzdG9wLWNvbG9yPSIjZjgwMDAwIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMC4wMSIvPjxzdG9wIHN0b3AtY29sb3I9IiNlMGUwZTAiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjk4NiIvPjxzdG9wIHN0b3AtY29sb3I9IiNmODAwMDAiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwLjk4NiIvPjxzdG9wIHN0b3AtY29sb3I9IiNlMGRkZGQiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #e0dede), color-stop(0.01, #e0e0e0), color-stop(0.01, #f80000), color-stop(0.986, #e0e0e0), color-stop(0.986, #f80000), color-stop(1, #e0dddd));
+  /* Android 2.3 */
+  background-image: -webkit-repeating-linear-gradient(top left, #f80000 1%, #e0e0e0 98.6%);
+  /* IE10+ */
+  background-image: repeating-linear-gradient(to bottom right, #f80000 1%, #e0e0e0 98.6%);
+  background-image: -ms-repeating-linear-gradient(top left, #f80000 1%, #e0e0e0 98.6%);
+}
+/* line 117, ../sass/_home-page.scss */
+.slider-section .welcome-text .mobile-get-info .form-wrapper {
+  overflow: hidden;
+}
+/* line 119, ../sass/_home-page.scss */
+.slider-section .welcome-text .mobile-get-info .form-wrapper .name-field,
+.slider-section .welcome-text .mobile-get-info .form-wrapper .phone-field,
+.slider-section .welcome-text .mobile-get-info .form-wrapper .email-email,
+.slider-section .welcome-text .mobile-get-info .form-wrapper .program-email {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  border: 0;
+  margin: 5px 0;
+  padding-left: 8px;
+  color: #b4b4b4;
+  font: 400 20px/40pc "Swiss721BT", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 134, ../sass/_home-page.scss */
+.slider-section .welcome-text .mobile-get-info .form-wrapper .submit-btn {
+  display: block;
+  float: right;
+  width: 144px;
+  height: 39px;
+  margin: 5px 0 0;
+  color: #ffffff;
+  font: 400 30px/39px "Swiss721BT", sans-serif;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #b30000;
+}
+
+/* line 151, ../sass/_home-page.scss */
+.program-section {
+  position: relative;
+  padding: 0 0 70px;
+  background-image: url("../images/program-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+/* line 159, ../sass/_home-page.scss */
+.program-section:before {
+  position: absolute;
+  content: "";
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 111px;
+  background-image: url("../images/mobile-bg-programs.png");
+  background-repeat: no-repeat;
+  background-position: 14% 20%;
+  z-index: 0;
+}
+/* line 173, ../sass/_home-page.scss */
+.program-section .program-title {
+  color: #627078;
+  font: 400 30px/34px "Swiss721BT", sans-serif;
+  float: right;
+  margin: 0 15px 65px 0;
+  padding: 10px 0 0;
+}
+/* line 181, ../sass/_home-page.scss */
+.program-section .mobile-list {
+  clear: both;
+  max-width: 460px;
+  margin: 0 auto;
+}
+/* line 185, ../sass/_home-page.scss */
+.program-section .mobile-list li {
+  display: block;
+  padding: 5px;
+  border-top: 2px solid rgba(255, 255, 255, 0.6);
+}
+/* line 190, ../sass/_home-page.scss */
+.program-section .mobile-list li a {
+  color: #ffffff;
+  font: 400 25px/30px "Open Sans", sans-serif;
+}
+/* line 195, ../sass/_home-page.scss */
+.program-section .mobile-list li:last-child {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+/* line 201, ../sass/_home-page.scss */
+.program-section .desctop-list {
+  display: none;
+}
+
+/* line 205, ../sass/_home-page.scss */
+.gallery-section {
+  position: relative;
+}
+/* line 208, ../sass/_home-page.scss */
+.gallery-section:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -33px;
+  width: 100%;
+  height: 55px;
+  background-image: url("../images/gallery-top.png");
+  background-repeat: no-repeat;
+  background-position: 18% 20%;
+  z-index: 0;
+}
+/* line 221, ../sass/_home-page.scss */
+.gallery-section .wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+/* line 226, ../sass/_home-page.scss */
+.gallery-section .gallery-slider {
+  position: relative;
+  clear: both;
+}
+/* line 230, ../sass/_home-page.scss */
+.gallery-section .gallery-slider .prev-btn,
+.gallery-section .gallery-slider .next-btn {
+  position: absolute;
+  bottom: 15px;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 2px solid #566273;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+/* line 244, ../sass/_home-page.scss */
+.gallery-section .gallery-slider .prev-btn .fa,
+.gallery-section .gallery-slider .next-btn .fa {
+  font-size: 27px;
+  line-height: 23px;
+  text-align: center;
+  color: #566273;
+}
+/* line 252, ../sass/_home-page.scss */
+.gallery-section .gallery-slider .prev-btn {
+  left: 20px;
+}
+/* line 256, ../sass/_home-page.scss */
+.gallery-section .gallery-slider .next-btn {
+  right: 20px;
+}
+/* line 260, ../sass/_home-page.scss */
+.gallery-section .gallery-slider .img-container {
+  width: 320px;
+  height: 215px;
+}
+/* line 264, ../sass/_home-page.scss */
+.gallery-section .gallery-slider .img-container img {
+  min-width: 320px;
+  min-height: 215px;
+  height: auto;
+}
+/* line 272, ../sass/_home-page.scss */
+.gallery-section .gallery-title {
+  position: relative;
+  z-index: 1;
+  top: -10px;
+  float: right;
+  margin: -10px 30px 0 0;
+  color: #627078;
+  font: 400 30px/32px "Swiss721BT", sans-serif;
+}
+
+/* line 283, ../sass/_home-page.scss */
+.home-page-map {
+  position: relative;
+  background-color: #7c8d94;
+}
+/* line 287, ../sass/_home-page.scss */
+.home-page-map:before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-image: url("../images/map-top-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 19% 20%;
+  z-index: 0;
+}
+/* line 300, ../sass/_home-page.scss */
+.home-page-map .title {
+  position: relative;
+  z-index: 1;
+  float: right;
+  margin: 60px 20px 35px;
+  color: #627078;
+  font: 400 30px/32px "Swiss721BT", sans-serif;
+}
+/* line 308, ../sass/_home-page.scss */
+.home-page-map .title span {
+  text-transform: uppercase;
+}
+/* line 313, ../sass/_home-page.scss */
+.home-page-map .mapWrapper {
+  clear: both;
+  height: auto;
+  padding: 0;
+}
+/* line 318, ../sass/_home-page.scss */
+.home-page-map .mapWrapper .map-overflow {
+  z-index: -1;
+}
+/* line 323, ../sass/_home-page.scss */
+.home-page-map #mapWrapper {
+  display: none;
+}
+/* line 330, ../sass/_home-page.scss */
+.home-page-map .map-info-block .row {
+  overflow: hidden;
+  margin: 10px auto;
+}
+/* line 333, ../sass/_home-page.scss */
+.home-page-map .map-info-block .row .img-wrapper {
+  float: left;
+  margin: 0 15px 0 0;
+}
+/* line 336, ../sass/_home-page.scss */
+.home-page-map .map-info-block .row .img-wrapper.desctop-img {
+  display: none;
+}
+/* line 340, ../sass/_home-page.scss */
+.home-page-map .map-info-block .row .img-wrapper .fa {
+  display: block;
+  margin: 5px 0 0;
+  color: #ffffff;
+  font-size: 27px;
+  line-height: 22px;
+}
+/* line 349, ../sass/_home-page.scss */
+.home-page-map .map-info-block .row a, .home-page-map .map-info-block .row p {
+  color: #ffffff;
+  font: 400 30px/32px "Swiss721BT", sans-serif;
+}
+/* line 355, ../sass/_home-page.scss */
+.home-page-map .map-info-block .get-direction {
+  display: block;
+  float: right;
+  margin: 40px 0 50px;
+  color: #ffffff;
+  font: 400 30px/32px "Swiss721BT", sans-serif;
+}
+/* line 363, ../sass/_home-page.scss */
+.home-page-map .map-info-block .social-block {
+  height: 170px;
+  margin-top: 40px;
+  background-image: url("../images/mobile-social-bg.png");
+  background-repeat: no-repeat;
+  background-position: 15% 20%;
+  background-size: cover;
+}
+/* line 371, ../sass/_home-page.scss */
+.home-page-map .map-info-block .social-block .social-list {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 375, ../sass/_home-page.scss */
+.home-page-map .map-info-block .social-block .social-list li {
+  display: inline-block;
+}
+
+/* line 382, ../sass/_home-page.scss */
+.preffoter {
+  display: none;
 }
 
 /*--------------------------------------------------------------
 # import media styles
 --------------------------------------------------------------*/
+@media (min-width: 768px) {
+  /* line 10, ../sass/_media.scss */
+  .slider-section .main-slider {
+    max-width: 940px;
+  }
+  /* line 13, ../sass/_media.scss */
+  .slider-section .main-slider .slick-list {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  /* line 18, ../sass/_media.scss */
+  .slider-section .main-slider .prev-btn,
+  .slider-section .main-slider .next-btn {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+  /* line 25, ../sass/_media.scss */
+  .slider-section .main-slider .slider-content {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  /* line 33, ../sass/_media.scss */
+  .gallery-section .wrapper {
+    max-width: 1010px;
+    padding: 0 15px;
+  }
+  /* line 39, ../sass/_media.scss */
+  .gallery-section .gallery-slider .slick-slide {
+    padding: 0 5px;
+  }
+  /* line 43, ../sass/_media.scss */
+  .gallery-section .gallery-slider .prev-btn,
+  .gallery-section .gallery-slider .next-btn {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+  /* line 50, ../sass/_media.scss */
+  .gallery-section .gallery-slider .img-container {
+    width: 250px;
+    height: 165px;
+  }
+  /* line 54, ../sass/_media.scss */
+  .gallery-section .gallery-slider .img-container img {
+    min-width: 250px;
+    min-height: 165px;
+    height: auto;
+  }
+}
 @media (min-width: 1024px) {
-  /* line 14, ../sass/_media.scss */
+  /* line 66, ../sass/_media.scss */
   header .mobile-navigation {
     display: none;
   }
@@ -553,7 +991,7 @@ footer .copyright .copyright-sign span {
 --------------------------------------------------------------*/
 /* line 51, ../sass/main-style.scss */
 body {
-  font-family: 'Swiss721BT', 'Open Sans', 'Sylfaen', 'Arial', 'Helvetica' sans-serif;
+  font-family: 'Swiss721BT', 'Open Sans', 'Sylfaen', 'Arial', 'Helvetica', sans-serif;
   font-weight: 400;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -631,7 +1069,6 @@ a {
   padding-bottom: 56%;
   position: relative;
   height: 0;
-  border-top: 7px solid #c76666;
 }
 /* line 45, ../sass/_mixins.scss */
 .mapWrapper iframe {
@@ -652,34 +1089,34 @@ a {
   display: block;
   cursor: pointer;
 }
-/* line 80, ../sass/main-style.scss */
+/* line 79, ../sass/main-style.scss */
 .mapWrapper #mapWrapper {
   min-height: 755px;
   height: 100%;
   width: 100%;
   min-width: 500px;
 }
-/* line 86, ../sass/main-style.scss */
+/* line 85, ../sass/main-style.scss */
 .mapWrapper .gm-style-iw * {
   display: block;
   width: 100%;
 }
-/* line 90, ../sass/main-style.scss */
+/* line 89, ../sass/main-style.scss */
 .mapWrapper .gm-style-iw h4, .mapWrapper .gm-style-iw p {
   margin: 0;
   padding: 0;
 }
-/* line 94, ../sass/main-style.scss */
+/* line 93, ../sass/main-style.scss */
 .mapWrapper .gm-style-iw a {
   color: #4272db;
 }
 
-/* line 98, ../sass/main-style.scss */
+/* line 97, ../sass/main-style.scss */
 .lb-data .lb-details {
   display: none;
 }
 
-/* line 101, ../sass/main-style.scss */
+/* line 100, ../sass/main-style.scss */
 .map-marker-label {
   position: absolute;
   left: 60%;
