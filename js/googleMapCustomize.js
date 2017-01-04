@@ -40,7 +40,7 @@
 				var position = this.getProjection().fromLatLngToDivPixel(this.get('position'));
 				this.span.innerHTML = text;
 				this.span.style.left = (position.x - (markerSize.x / 2)) - (text.length * 3) + 330 + 'px';
-				this.span.style.top = (position.y - markerSize.y - 5) + 'px';
+				this.span.style.top = (position.y - markerSize.y - 15) + 'px';
 			}
 		});
 

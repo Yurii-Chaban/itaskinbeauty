@@ -77,7 +77,7 @@
 
 	.welcome-text {
 		position: relative;
-		background-color: #dee3e5;
+		background-color: #d4dadf;
 		background-size: cover;
 
 		&:before {
@@ -128,7 +128,7 @@
 					margin: 5px 0;
 					padding-left: 8px;
 					color: #b4b4b4;
-					font: 400 20px / 40pc $Swiss721BT;
+					font: 400 20px / 40px $Swiss721BT;
 					@include border-box;
 				}
 				.submit-btn {
@@ -312,6 +312,7 @@
 
 	.mapWrapper {
 		clear: both;
+		max-height: 505px;
 		height: auto;
 		padding: 0;
 

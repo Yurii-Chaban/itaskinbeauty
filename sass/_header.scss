@@ -14,9 +14,19 @@ header {
 	/*---------------------------------------------------*/
 	.top-nav {
 		.desctop-phone,
-		.dectop-search,
+		.desctop-search,
 		.lenguages-block {
 			display: none;
+		}
+
+		.lenguages-block {
+			i.icon.angle.down:before {
+				content: "\f107" !important;
+				font-family: 'Icon';
+				color: #475056;
+				font-size: 20px;
+				line-height: 20px;
+			}
 		}
 
 		.site-main-sign {
@@ -32,9 +42,9 @@ header {
 
 	.call-us-block {
 		float: right;
-    margin: 5px 22% 0 0;
-    vertical-align: middle;
-    clear: both;
+		margin: 5px 22% 0 0;
+		vertical-align: middle;
+		clear: both;
 
 		.fa {
 			color: #454748;
@@ -81,12 +91,4 @@ header {
 		display: none;
 	}
 	/*---------------------------------------------------*/
-
-	i.icon.angle.down:before {
-		content: "\f107";
-		font-family: 'Icon';
-		font-size: 30px;
-		color: #000;
-	}
-
 }

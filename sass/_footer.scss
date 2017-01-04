@@ -7,25 +7,25 @@ footer {
 	.copyright {
 		clear: both;
 		margin: 0 auto;
-		padding: 2px 0;
+		padding: 4px 0;
 		text-align: center;
 		@include border-box;
-		background-color: #7c8d94;
+		background-color: #ffffff;
 		box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.28);
 		.copyright-sign {
 			margin: 0 auto;
-			color: #fff;
-			font: 400 15px / 22px $OpenSans;
+			color: #000000;
+			font: 400 15px / 22px $Swiss721BT;
 
 			a {
-				color: #fff;
+				color: #000000;
 
 				&:hover {
 					text-decoration: underline;
 				}
 
 				&:nth-of-type(2) {
-					font: 400 15px / 22px $HelveticaNeueLTPro;
+					font: 400 16px / 22px $HelveticaNeueLTPro;
 				}
 			}
 

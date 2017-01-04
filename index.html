@@ -32,7 +32,7 @@
 					<i class="fa fa-phone" aria-hidden="true"></i>
 					<a href="til:8479951932">847-995-1932</a>
 				</div>
-				<div class="dectop-search">
+				<div class="desctop-search">
 					<form id="search-form">
 						<input id="search-field" type="text" name="search" placeholder="Search...">
 						<button id="search-button" type="submit">
@@ -41,14 +41,14 @@
 					</form>
 				</div>
 				<div class="lenguages-block">
-					<label for="select-city">Город*</label>
 					<select class="ui search dropdown select-lenguage">
 						<option value="en">Eng</option>
-						<option value="ru">Rus</option>
-						<option value="pl">Polish</option>
-						<option value="kr">Korean</option>
-						<option value="sp">Spanish</option>
-						<option value="ger">Germany</option>
+						<option value="ru">Ru</option>
+						<option value="pl">Pl</option>
+						<option value="kr">Ko</option>
+						<option value="sp">Es</option>
+						<option value="ger">De</option>
+						<option value="zh">Zh</option>
 					</select>
 				</div>
 			</div>
@@ -112,7 +112,7 @@
 						<a href="#">About Us</a>
 					</li>
 					<li>
-						<a href="#">Programs</a>
+						<a class="main-menu-active" href="#">Programs</a>
 					</li>
 					<li>
 						<a href="#">Financial Assistance</a>
@@ -243,7 +243,7 @@
 						<input class="phone-field" type="tel" name="phone-number" placeholder="Your Phone">
 						<input class="email-email" type="email" name="email-number" placeholder="Your E-mail">
 						<input class="program-email" type="text" name="email-number" placeholder="Desired Program of Study">
-						<input type="submit" name="submit" value="submit">
+						<input class="submit-btn" type="submit" name="submit" value="submit">
 					</form>
 				</div>
 			</div>
@@ -292,7 +292,9 @@
 						<img src="images/program-1.jpg" alt="program images">
 					</div>
 					<div class="hover-text">
-						<p>Skin Care</p>
+						<p>
+							<a href="#">Skin Care</a>
+						</p>
 					</div>
 				</li>
 				<li>
@@ -300,7 +302,9 @@
 						<img src="images/program-2.jpg" alt="program images">
 					</div>
 					<div class="hover-text">
-						<p>Certified Medical Assisting</p>
+						<p>
+							<a href="#">Certified <br/> Medical Assisting</a>
+						</p>
 					</div>
 				</li>
 				<li>
@@ -308,7 +312,9 @@
 						<img src="images/program-3.jpg" alt="program images">
 					</div>
 					<div class="hover-text">
-						<p>Advenced Training Continuing Education</p>
+						<p>
+							<a href="#">Advenced Training Continuing Education</a>
+						</p>
 					</div>
 				</li>
 				<li>
@@ -316,13 +322,15 @@
 						<img src="images/program-4.jpg" alt="program images">
 					</div>
 					<div class="hover-text">
-						<p>Students Spa</p>
+						<p>
+							<a href="#">Students Spa</a>
+						</p>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</section>
-	<section class="site-container gallery-section">
+	<section class="site-container gallery-section" onclick="$('.map-overflow').removeAttr('style')">
 		<div class="wrapper">
 			<h2 class="gallery-title">Gallery</h2>
 			<div class="gallery-slider">
@@ -366,109 +374,117 @@
 		<div class="mapWrapper">
 			<div id='mapWrapper'></div>
 			<h5 class="map-overflow" onclick="$(this).css('display','none')">&nbsp;</h5>
-			<div class="map-info-block">
-				<div class="wrapper">
-					<div class="row">
-					<div class="img-wrapper desctop-img">
-							<img src="images/home-img.png" alt="home images">
+			<div class="info-wrapper">
+				<div class="map-info-block">
+					<div class="wrapper">
+						<div class="row">
+							<div class="img-wrapper desctop-img">
+								<img src="images/home-img.png" alt="home images">
+							</div>
+							<p>
+								<span>830 N. Meacham Road,</span>
+								<span>Schaumburg, IL 60173</span>
+							</p>
 						</div>
-						<p>
-							<span>830 N. Meacham Road,</span>
-							<span>Schaumburg, IL 60173</span>
-						</p>
-					</div>
-					<div class="row">
-						<div class="img-wrapper">
-							<i class="fa fa-phone" aria-hidden="true"></i>
+						<div class="row">
+							<div class="img-wrapper">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+							</div>
+							<a href="tel:8479951932">847.995.1932</a>
 						</div>
-						<a href="tel:8479951932">847.995.1932</a>
+						<a class="get-direction" href="https://www.google.com/maps/place/830+N+Meacham+Rd,+Schaumburg,+IL+60173/@42.044824,-88.0460074,17z/data=!4m2!3m1!1s0x880faf992d41c65b:0xab161a61694d94de">Get Direction</a>
 					</div>
-					<a class="get-direction" href="https://www.google.com/maps/place/830+N+Meacham+Rd,+Schaumburg,+IL+60173/@42.044824,-88.0460074,17z/data=!4m2!3m1!1s0x880faf992d41c65b:0xab161a61694d94de">Get Direction</a>
-				</div>
-				<div class="social-block">
-					<ul class="social-list">
-						<li>
-							<a href="#">
-								<img src="images/facebook.png" alt="facebook">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="images/twitter.png" alt="twitter">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="images/instagram.png" alt="instagram">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="images/linkedin.png" alt="linkedin">
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="images/youtube.png" alt="youtube">
-							</a>
-						</li>
-					</ul>
+					<div class="social-block">
+						<ul class="social-list">
+							<li>
+								<a href="#">
+									<img src="images/facebook.png" alt="facebook">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/twitter.png" alt="twitter">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/instagram.png" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/linkedin.png" alt="linkedin">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/youtube.png" alt="youtube">
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="site-container preffoter">
-		<div class="footer-menu">
-			<div class="h2">Menu:</div>
-			<ul class="menu-list">
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">Gallery</a>
-				</li>
-				<li>
-					<a href="#">About Us</a>
-				</li>
-				<li>
-					<a href="#">International Students</a>
-				</li>
-				<li>
-					<a href="#">Programs</a>
-				</li>
-				<li>
-					<a href="#">Blog</a>
-				</li>
-				<li>
-					<a href="#">Financial Assistance</a>
-				</li>
-				<li>
-					<a href="#">Contact Us</a>
-				</li>
-				<li>
-					<a href="#">FAQ</a>
-				</li>
-			</ul>
-		</div>
-		<div class="footer-programs">
-			<h2 class="title">Programs :</h2>
-			<ul class="programs-list">
-				<li>
-					<a href="#">Skin Care</a>
-				</li>
-				<li>
-					<a href="#">Cert ified Medical Assisting</a>
-				</li>
-				<li>
-					<a href="#">Advanced Training, Continuing Education</a>
-				</li>
-				<li>
-					<a href="#">Students Spa </a>
-				</li>
-			</ul>
+	<section class="site-container preffoter" onclick="$('.map-overflow').removeAttr('style')">
+		<div class="wrapper">
+			<div class="footer-nav">
+				<div class="float-block">
+					<div class="footer-menu">
+						<h2 class="title">Menu:</h2>
+						<ul class="menu-list">
+							<li>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">Gallery</a>
+							</li>
+							<li>
+								<a href="#">About Us</a>
+							</li>
+							<li>
+								<a href="#">International Students</a>
+							</li>
+							<li>
+								<a href="#">Programs</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Financial Assistance</a>
+							</li>
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-programs">
+						<h2 class="title">Programs :</h2>
+						<ul class="programs-list">
+							<li>
+								<a href="#">Skin Care</a>
+							</li>
+							<li>
+								<a href="#">Cert ified Medical Assisting</a>
+							</li>
+							<li>
+								<a href="#">Advanced Training, Continuing Education</a>
+							</li>
+							<li>
+								<a href="#">Students Spa </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
-	<footer class="site-container inside-page-footer">
+	<footer class="site-container inside-page-footer" >
 		<div class="copyright">
 			<div class="wrapper">
 				<h3 class="copyright-sign">
