@@ -95,3 +95,38 @@ $('.blog-mobile-slider').slick({
 	}
 	]
 });
+// SINGLE THUBNAIL BLOG MORE SLIDER
+$(document).ready(function() {
+
+	$('.single-article-slider').slick({
+		autoplay: false,
+		autoplaySpeed: 3000,
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		centerPadding: '20px',
+		variableWidth: true,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '10px',
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				arrows: true,
+				centerMode: true,
+				centerPadding: '0',
+				slidesToShow: 1
+			}
+		}
+		]
+	});
+
+});

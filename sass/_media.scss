@@ -61,6 +61,87 @@
 			}
 		}
 	}
+	/*---------------------------------*/
+	.blog-more-page {
+		.wrapper {
+			max-width: 1010px;
+			padding: 0 15px;
+		}
+		.overflow-block-content {
+			width: 100%;
+			height: 550px;
+			padding-right: 15px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+
+			&::-webkit-scrollbar {
+				width: 6px;
+			}
+			/* Track */
+			&::-webkit-scrollbar-track {
+				background: rgba(159,159,159, 1);
+				border: 4px solid transparent;
+				background-clip: content-box;
+			}
+			/* Handle */
+			&::-webkit-scrollbar-thumb {
+				background: rgba(46,52,57, 1);
+				border: 1px solid rgba(46,52,57, 1);
+				width: 6px !important;
+				height: 7px !important;
+			}
+		}
+		.single-article-item {
+			overflow: hidden;
+			margin: 20px auto 0;
+			.mobile-header-title {
+				display: none;
+			}
+
+			.thubnail-wrapper {
+				float: left;
+				margin: 0 25px 0 0;
+				width: 305px;
+				height: 215px;
+			}
+
+			.overflow-wrapper {
+
+				.single-back {
+					display: block;
+					float: right;
+					color: #404549;
+					font: 400 24px / 28px $Swiss721BT;
+				}
+
+				.desctop-header-title {
+					display: block;
+
+					.article-title {
+						margin: 0 0 10px;
+						color: #404549;
+						font: 400 24px / 26px $Swiss721BT;
+						text-transform: capitalize;
+					}
+
+					.article-post-date {
+						color: #404549;
+						font: 400 16px / 22px $Swiss721BT;
+					}
+				}
+
+				.article-descriprion {
+					padding: 0;
+
+					p {
+						display: block;
+						margin: 20px auto 0;
+					}
+				}
+			}
+
+		}
+	}
 }
 
 @media (min-width: 1024px) {
@@ -759,6 +840,28 @@
 	--------------------------------------------------------------*/
 
 	.blog-page {
+		position: relative;
+
+		.wrapper {
+			.hack {
+				display: block;
+				position: absolute;
+				bottom: -52px;
+				right: 20px;
+				content: "";
+				background-color: #d4dadf;
+				width: 130px;
+				height: 148px;
+				z-index: 2;
+				.white-hack {
+					display: block;
+					width: 100%;
+					height: 22px;
+					background-color: #ffffff;
+				}
+			}
+		}
+
 		.mobile-version {
 			display: none;
 		}
@@ -811,7 +914,7 @@
 					.article-title {
 						margin: 0 0 3px 0;
 						color: #404549;
-						font: 400 24px / 26px $Swiss721BT;
+						font: 400 24px / 28px $Swiss721BT;
 					}
 
 					.article-post-date {
@@ -830,6 +933,7 @@
 
 					.article-more-btn {
 						position: relative;
+						z-index: 1;
 						display: block;
 						width: 95px;
 						height: 30px;
@@ -858,6 +962,109 @@
 			padding: 88px 0 0 40px;
 		}
 	}
+	/*--------------------------------------------------------------
+	# Blog more page
+	--------------------------------------------------------------*/
+	.blog-more-page {
+
+		.overflow-block-content {
+			height: 677px;
+			margin: 40px auto 0;
+		}
+		.single-article-item  {
+			max-width: 940px;
+			margin: 0;
+
+			.desctop-header-title {
+				.article-title {
+					margin: 0;
+				}
+			}
+
+			.article-descriprion {
+				p {
+					margin: 15px auto 0;
+				}
+			}
+			.single-article-slider {
+				display: block;
+				margin: 20px auto 0;
+
+				* {
+					outline: none !important;
+				}
+
+				.slider-thubnail {
+					position: relative;
+					width: 420px;
+					height: 212px;
+					margin-right: 120px;
+					overflow: hidden;
+					@include transition;
+
+					img {
+						display: block;
+						width: 100%;
+						height: auto;
+						margin: 0 auto;
+						text-align: center;
+						@include transition;
+					}
+
+					&:before {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						display: block;
+						margin: 0;
+						width: 82px;
+						height: 82px;
+
+						background: url("../images/play-img.png") 50% 50% no-repeat;
+						opacity: 0;
+						font-family: "Open Sans", sans-serif;
+						font-weight: 300;
+						font-size: 45px;
+						color: #fff;
+						z-index: 99;
+						cursor: pointer;
+						@include transition;
+					}
+
+					&:after {
+						content: '';
+						height: 100%;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						background: rgba(0,0,0,0.3);
+						opacity: 0;
+						@include transition;
+					}
+
+					&:hover {
+						&:before,
+						&:after {
+							opacity: 1;
+						}
+
+						img {
+							-webkit-transform: scale(1.1);
+							-moz-transform: scale(1.1);
+							-ms-transform: scale(1.1);
+							-o-transform: scale(1.1);
+							transform: scale(1.1);
+						}
+					}
+				}
+				overflow: hidden;
+			}
+		}
+	}
+	
 }
 @media (min-width: 1920px) {
 	.home-page-map {
