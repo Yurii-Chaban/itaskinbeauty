@@ -1,0 +1,70 @@
+.blog-page {
+	.inside-page-main-title {
+		@include inside-page-main-title;
+	}
+
+	.mobile-version {
+		padding-bottom: 80px;
+		.blog-mobile-slider {
+			overflow: hidden;
+			margin: 20px auto 0;
+
+			* {
+				outline: none !important;
+			}
+
+			.blog-item {
+				width: 230px;
+				overflow: hidden;
+				margin: 0 10px;
+
+				.article-title {
+					margin: 0 0 10px 0;
+					color: #404549;
+					font: 400 24px / 26px $Swiss721BT;
+				}
+
+				.article-post-date {
+					color: #404549;
+					font: 400 16px / 22px $Swiss721BT;
+				}
+
+				.thubnail-wrapper {
+					width: 227px;
+					height: 161px;
+					margin: 10px 0;
+					overflow: hidden;
+					img {
+						max-width: 100%;
+						height: auto;
+					}
+				}
+
+				.article-descriprion {
+					p {
+						text-align: justify;
+						color: #404549;
+						font: 400 16px / 18px $Swiss721BT;
+					}
+				}
+
+				.article-more-btn {
+					display: block;
+					width: 95px;
+					height: 30px;
+					float: right;
+					text-align: center;
+					color: #ffffff;
+					font: 700 16px / 30px $Swiss721BT;
+					text-transform: uppercase;
+					background-color: #cc2020;
+					@include transition;
+					
+					&:hover {
+						background-color: #f74646;
+					}
+				}
+			}
+		}
+	}
+}

@@ -77,3 +77,15 @@
 		height: 100%;
 	}
 }
+@mixin inside-page-main-title {
+	margin: 0 auto;
+	text-align: center;
+	color: #000000;
+	font: 400 27px / 30px $Swiss721BT;
+	text-transform: uppercase;
+
+	@media (min-width: 1024px) {
+		text-transform: capitalize;
+		padding-left: 25px;
+	}
+}

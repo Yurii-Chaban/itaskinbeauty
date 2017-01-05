@@ -1,6 +1,6 @@
 /*
-Theme Name: International Training Academy
-Theme URI: https://github.com/YuriyChaban/itaskinbeauty
+Project Name: International Training Academy
+Project URI: https://yuriychaban.github.io/itaskinbeauty/
 Author: Yuriy Chaban
 Author URI: https://github.com/YuriyChaban/
 Description: Site for International Training Academy (http://itaskinbeauty.com)
@@ -15,32 +15,40 @@ License URI: LICENSE
 @import "compass/reset";
 
 /*--------------------------------------------------------------
-# import scss files
+# scss files
 --------------------------------------------------------------*/
 @import "variables";
 @import "mixins";
 	/*--------------------------------------------------------------
-	# import fonts
+	# fonts
 	--------------------------------------------------------------*/
 	@import "fonts";
 	/*--------------------------------------------------------------
-	# import mobile menu
+	# mobile menu
 	--------------------------------------------------------------*/
 	@import "menu";
 	/*--------------------------------------------------------------
-	# import header
+	# header
 	--------------------------------------------------------------*/
 	@import "header";
 	/*--------------------------------------------------------------
-	# import footer
+	# footer
 	--------------------------------------------------------------*/
 	@import "footer";
 	/*--------------------------------------------------------------
-	# import home page
+	# home page
 	--------------------------------------------------------------*/
 	@import "home-page";
 	/*--------------------------------------------------------------
-	# import media styles
+	# inside page section
+	--------------------------------------------------------------*/
+	@import "inside-page-section";
+	/*--------------------------------------------------------------
+	# blog page
+	--------------------------------------------------------------*/
+	@import "blog-page";
+	/*--------------------------------------------------------------
+	# media styles
 	--------------------------------------------------------------*/
 	@import "media";
 

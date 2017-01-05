@@ -63,3 +63,35 @@ $('.gallery-slider').slick({
 	prevArrow: '<div class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>'
 
 });
+// BLOG PAGE MOBILE SLIDER
+$('.blog-mobile-slider').slick({
+	autoplay: false,
+	autoplaySpeed: 3000,
+	infinite: true,
+	speed: 1000,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	centerPadding: '20px',
+	arrows: false,
+	variableWidth: true,
+	responsive: [
+	{
+		breakpoint: 768,
+		settings: {
+			arrows: false,
+			centerMode: true,
+			centerPadding: '20px',
+			slidesToShow: 2
+		}
+	},
+	{
+		breakpoint: 480,
+		settings: {
+			arrows: true,
+			centerMode: true,
+			centerPadding: '0',
+			slidesToShow: 1
+		}
+	}
+	]
+});
