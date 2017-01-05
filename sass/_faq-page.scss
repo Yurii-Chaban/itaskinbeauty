@@ -1,0 +1,37 @@
+.faq-page {
+	.inside-page-main-title {
+		@include inside-page-main-title;
+	}
+
+	.overflow-block-content {
+		.faq-nav-block {
+			display: none;
+		}
+
+		.faq-description-content {
+			.row {
+				display: none;
+				padding-bottom: 120px;
+				text-align: justify;
+
+				&:nth-of-type(1) {
+					display: block;
+				}
+
+				.description-title{
+					margin: 25px auto 15px;
+					color: #2e3439;
+					font: 400 18px / 24px $Swiss721BT;
+					text-decoration: underline;
+				}
+
+				.content {
+					p {
+						color: #4b5054;
+						font: 400 16px / 18px $Swiss721BT;
+					}
+				}
+			}
+		}
+	}
+}
