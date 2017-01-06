@@ -1,0 +1,25 @@
+.about-us-page {
+	.inside-page-main-title {
+		@include inside-page-main-title;
+	}
+
+	.overflow-block-content {
+		.about-nav-block {
+			display: none;
+		}
+
+		.about-description-content {
+			padding-bottom: 100px;
+			.content {
+				max-height: 460px;
+				overflow: hidden;
+				margin: 10px auto 0;
+				text-align: justify;
+				p {
+					color: #000000;
+					font: 400 18px / 22px $Swiss721BT;
+				}
+			}
+		}
+	}
+}
