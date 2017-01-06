@@ -1,6 +1,7 @@
 .about-us-page {
 	.inside-page-main-title {
 		@include inside-page-main-title;
+		text-transform: initial;
 	}
 
 	.overflow-block-content {

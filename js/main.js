@@ -128,5 +128,122 @@ $(document).ready(function() {
 		}
 		]
 	});
+	// GALLERY MOBILE SLIDER
+	$('.gallery-mobile-slider').slick({
+		autoplay: false,
+		autoplaySpeed: 3000,
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerPadding: '20px',
+		arrows: false,
+		variableWidth: true,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '20px',
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				arrows: true,
+				centerMode: true,
+				centerPadding: '0',
+				slidesToShow: 1
+			}
+		}
+		]
+	});
 
+	// gallery slider
+	// $('.slider-for').slick({
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	arrows: false,
+	// 	fade: true,
+	// 	asNavFor: '.slider-nav'
+	// });
+	// $('.slider-nav').slick({
+	// 	slidesToShow: 5,
+	// 	slidesToScroll: 1,
+	// 	asNavFor: '.slider-for',
+	// 	dots: true,
+	// 	centerMode: true,
+	// 	focusOnSelect: true
+	// });
+
+});
+
+
+
+$(document).ready(function() {
+	$(".single-article-gallery").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none',
+		'autoScale'     : false,
+		'transitionIn'  : 'none',
+		'titleShow'     : false,
+		'showCloseButton': true,
+		'wrapCSS' : 'custom-gallery-wrapper',
+		'transitionOut' : 'none',
+		'title'         : '',
+		'width'         : 980,
+		'height'        : 655,
+		'href'          : this.href,
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
+	$(".videoWrapper").click(function() {
+		$.fancybox({
+			'padding'       : 0,
+			'autoScale'     : false,
+			'transitionIn'  : 'none',
+			'titleShow'     : false,
+			'showCloseButton': true,
+			'titlePosition' : 'inside',
+			'transitionOut' : 'none',
+			'title'         : '',
+			'width'         : 640,
+			'height'        : 385,
+			'href'          : this.href,
+			'type'          : 'iframe',
+			'helpers'     : {
+				'overlay' : {'closeClick': false}
+			},
+		});
+
+		return false;
+	});
+
+});
+
+jQuery(document).ready(function($){
+	//open popup
+	$('.cd-popup-trigger').on('click', function(event){
+		event.preventDefault();
+		$('.cd-popup').addClass('is-visible');
+	});
+	
+	//close popup
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+		if(event.which=='27'){
+			$('.cd-popup').removeClass('is-visible');
+		}
+	});
 });

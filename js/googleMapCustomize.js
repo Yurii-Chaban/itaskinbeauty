@@ -39,7 +39,7 @@
 				var text = String(this.get('text'));
 				var position = this.getProjection().fromLatLngToDivPixel(this.get('position'));
 				this.span.innerHTML = text;
-				this.span.style.left = (position.x - (markerSize.x / 2)) - (text.length * 3) + 330 + 'px';
+				this.span.style.left = (position.x - (markerSize.x / 2)) - (text.length * 3) - 60 + 'px';
 				this.span.style.top = (position.y - markerSize.y - 15) + 'px';
 			}
 		});
@@ -49,6 +49,15 @@
 			var gmap = new google.maps.Map(document.getElementById('mapWrapper'), {
 				zoom: 17,
 				center: myLatLng,
+				zoomControl: false,
+				disableDoubleClickZoom: false,
+				mapTypeControl: false,
+				scaleControl: false,
+				scrollwheel: false,
+				panControl: false,
+				streetViewControl: false,
+				draggable : false,
+				overviewMapControl: false,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 				styles: [
 				{
@@ -160,7 +169,6 @@
 				icon: "images/map-marker.png",
 				position: myLatLng,
 				label: 'International Training Academy',
-				draggable: true
 			});
 		}
 

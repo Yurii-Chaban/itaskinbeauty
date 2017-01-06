@@ -375,6 +375,60 @@
 				text-align: center;
 				li {
 					display: inline-block;
+					width: 45px;
+					height: 45px;
+					border-radius: 50%;
+					overflow: hidden;
+					-moz-transition: all 0.5s ease-in-out; 
+					-webkit-transition: all 0.5s ease-in-out; 
+					-o-transition: all 0.5s ease-in-out; 
+					-ms-transition: all 0.5s ease-in-out; 
+					transition: all 0.5s ease-in-out;
+
+					&:hover {
+						.fa {
+							-moz-transform: rotate(360deg); 
+							-webkit-transform: rotate(360deg); 
+							-o-transform: rotate(360deg); 
+							-ms-transform: rotate(360deg); 
+							transform: rotate(360deg);
+						}
+					}
+
+					.fa {
+						display: block;
+						margin: 0 auto;
+						text-align: center;
+						color: #ffffff;
+						font-size: 24px;
+						line-height: 45px;
+						border-radius: 50%;
+						-moz-transition: all 0.5s ease-in-out; 
+						-webkit-transition: all 0.5s ease-in-out; 
+						-o-transition: all 0.5s ease-in-out; 
+						-ms-transition: all 0.5s ease-in-out; 
+						transition: all 0.5s ease-in-out;
+					}
+
+					.fa-facebook {
+						background-color: #0a2971;
+					}
+
+					.fa-twitter {
+						background-color: #3398e9;
+					}
+
+					.fa-instagram {
+						background-color: #0b4073;
+					}
+
+					.fa-linkedin {
+						background-color: #005c97;
+					}
+
+					.fa-youtube-play {
+						background-color: #b60e09;
+					}
 				}
 			}
 		}
