@@ -230,7 +230,7 @@ h1 {
 /* line 117, ../sass/_menu.scss */
 .overlay {
   position: absolute;
-  background: transparent;
+  background: #eee;
   top: -44px;
   left: 0;
   width: 100%;
@@ -409,6 +409,8 @@ header .top-nav .lenguages-block i.icon.angle.down:before {
 }
 /* line 32, ../sass/_header.scss */
 header .top-nav .site-main-sign {
+  position: relative;
+  z-index: 10;
   width: 140px;
   float: right;
   margin: 5px 0 0;
@@ -416,24 +418,24 @@ header .top-nav .site-main-sign {
   color: #566066;
   font: 400 14px/15px "Swiss721BT", sans-serif;
 }
-/* line 40, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 header .top-nav .site-main-sign a {
   color: #566066;
 }
-/* line 47, ../sass/_header.scss */
+/* line 49, ../sass/_header.scss */
 header .call-us-block {
   float: right;
   margin: 5px 22% 0 0;
   vertical-align: middle;
   clear: both;
 }
-/* line 53, ../sass/_header.scss */
+/* line 55, ../sass/_header.scss */
 header .call-us-block .fa {
   color: #454748;
   font-size: 27px;
   line-height: 27px;
 }
-/* line 59, ../sass/_header.scss */
+/* line 61, ../sass/_header.scss */
 header #info-mobile {
   width: 258px;
   height: auto;
@@ -450,19 +452,19 @@ header #info-mobile {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 72, ../sass/_header.scss */
+/* line 74, ../sass/_header.scss */
 header #info-mobile a {
   display: block;
   margin: 6px auto;
   padding: 13px 5px;
   text-align: center;
 }
-/* line 77, ../sass/_header.scss */
+/* line 79, ../sass/_header.scss */
 header #info-mobile a .phone {
   color: black;
   font: 700 22px/26px "Open Sans", sans-serif;
 }
-/* line 83, ../sass/_header.scss */
+/* line 85, ../sass/_header.scss */
 header .call-us-block > label {
   color: #000;
   float: right;
@@ -473,15 +475,15 @@ header .call-us-block > label {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 90, ../sass/_header.scss */
+/* line 92, ../sass/_header.scss */
 header input {
   display: none;
 }
-/* line 91, ../sass/_header.scss */
+/* line 93, ../sass/_header.scss */
 header input:checked + #info-mobile {
   display: none;
 }
-/* line 94, ../sass/_header.scss */
+/* line 96, ../sass/_header.scss */
 header .desctop-navigation {
   display: none;
 }
@@ -1473,6 +1475,92 @@ footer .copyright .copyright-sign span {
 /* line 73, ../sass/_gallery-page.scss */
 .gallery-page .desctop-version {
   display: none;
+}
+
+/*--------------------------------------------------------------
+# gallery more page
+--------------------------------------------------------------*/
+/* line 2, ../sass/_gallery-more-page.scss */
+.gallery-more-page .wrapper {
+  padding: 0;
+}
+/* line 6, ../sass/_gallery-more-page.scss */
+.gallery-more-page .inside-page-main-title {
+  margin: 0 auto;
+  text-align: center;
+  color: #000000;
+  font: 400 27px/30px "Swiss721BT", sans-serif;
+  text-transform: uppercase;
+  text-transform: initial;
+}
+@media (min-width: 1024px) {
+  /* line 6, ../sass/_gallery-more-page.scss */
+  .gallery-more-page .inside-page-main-title {
+    text-transform: capitalize;
+    padding-left: 25px;
+  }
+}
+/* line 11, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version {
+  padding-bottom: 100px;
+}
+/* line 14, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version .album-description {
+  margin: 20px auto 0;
+  padding: 0 15px;
+  text-align: justify;
+}
+/* line 18, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version .album-description p {
+  padding: 0;
+  color: #000000;
+  font: 400 15px/17px "Swiss721BT", sans-serif;
+}
+/* line 25, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version .gallery-more-mobile-slider {
+  margin: 25px auto 0;
+}
+/* line 27, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version .gallery-more-mobile-slider * {
+  outline: none !important;
+}
+/* line 31, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version .gallery-more-mobile-slider .gallery-more-item {
+  width: 320px;
+  height: 214px;
+  margin-right: 15px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 39, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version .gallery-more-mobile-slider .gallery-more-item:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+/* line 51, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version .gallery-more-mobile-slider .gallery-more-item:hover:before {
+  z-index: -1;
+}
+/* line 56, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version .gallery-more-mobile-slider .gallery-more-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 62, ../sass/_gallery-more-page.scss */
+.gallery-more-page .mobile-version .gallery-more-mobile-slider .gallery-more-item img {
+  width: 100%;
+  height: auto;
 }
 
 /*--------------------------------------------------------------
@@ -3173,22 +3261,6 @@ footer .copyright .copyright-sign span {
     color: transparent;
     white-space: nowrap;
   }
-  /* line 1615, ../sass/_media.scss */
-  .gallery-page .cd-popup-trigger {
-    display: block;
-    width: 170px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    color: #FFF;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 50em;
-    background: #35a785;
-    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
-  }
   /* line 1640, ../sass/_media.scss */
   .gallery-page .cd-popup {
     position: absolute;
@@ -3454,7 +3526,7 @@ footer .copyright .copyright-sign span {
 /*--------------------------------------------------------------
 # General styles
 --------------------------------------------------------------*/
-/* line 79, ../sass/main-style.scss */
+/* line 83, ../sass/main-style.scss */
 body {
   font-family: 'Swiss721BT', 'Open Sans', 'Sylfaen', 'Arial', 'Helvetica', sans-serif;
   font-weight: 400;
@@ -3463,7 +3535,7 @@ body {
   background: #fff;
 }
 
-/* line 87, ../sass/main-style.scss */
+/* line 91, ../sass/main-style.scss */
 .wrapper {
   max-width: 1010px;
   width: 100%;
@@ -3476,12 +3548,12 @@ body {
   position: relative;
 }
 
-/* line 95, ../sass/main-style.scss */
+/* line 99, ../sass/main-style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 98, ../sass/main-style.scss */
+/* line 102, ../sass/main-style.scss */
 .direction {
   position: relative;
   width: 100%;
@@ -3508,7 +3580,7 @@ a {
   text-transform: uppercase;
 }
 
-/* line 102, ../sass/main-style.scss */
+/* line 106, ../sass/main-style.scss */
 .videoWrapper {
   position: relative;
   margin: 15px auto;
@@ -3528,7 +3600,7 @@ a {
   height: 100%;
 }
 
-/* line 105, ../sass/main-style.scss */
+/* line 109, ../sass/main-style.scss */
 .mapWrapper {
   overflow: hidden;
   padding-bottom: 56%;
@@ -3554,34 +3626,34 @@ a {
   display: block;
   cursor: pointer;
 }
-/* line 107, ../sass/main-style.scss */
+/* line 111, ../sass/main-style.scss */
 .mapWrapper #mapWrapper {
   min-height: 755px;
   height: 100%;
   width: 100%;
   min-width: 500px;
 }
-/* line 113, ../sass/main-style.scss */
+/* line 117, ../sass/main-style.scss */
 .mapWrapper .gm-style-iw * {
   display: block;
   width: 100%;
 }
-/* line 117, ../sass/main-style.scss */
+/* line 121, ../sass/main-style.scss */
 .mapWrapper .gm-style-iw h4, .mapWrapper .gm-style-iw p {
   margin: 0;
   padding: 0;
 }
-/* line 121, ../sass/main-style.scss */
+/* line 125, ../sass/main-style.scss */
 .mapWrapper .gm-style-iw a {
   color: #4272db;
 }
 
-/* line 125, ../sass/main-style.scss */
+/* line 129, ../sass/main-style.scss */
 .lb-data .lb-details {
   display: none;
 }
 
-/* line 128, ../sass/main-style.scss */
+/* line 132, ../sass/main-style.scss */
 .map-marker-label {
   position: absolute;
   left: 60%;

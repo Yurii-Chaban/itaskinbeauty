@@ -202,6 +202,38 @@ $(document).ready(function() {
 		}
 		]
 	});
+	// GALLERY MORE MOBILE SLIDER
+	$('.gallery-more-mobile-slider').slick({
+		autoplay: false,
+		autoplaySpeed: 3000,
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerPadding: '20px',
+		arrows: false,
+		variableWidth: true,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '20px',
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				arrows: true,
+				centerMode: true,
+				centerPadding: '0',
+				slidesToShow: 1
+			}
+		}
+		]
+	});
 	
 });
 
@@ -247,6 +279,14 @@ $(document).ready(function() {
 		});
 
 		return false;
+	});
+
+	$(".fancybox").fancybox({
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
 	});
 
 });

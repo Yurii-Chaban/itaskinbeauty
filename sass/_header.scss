@@ -30,6 +30,8 @@ header {
 		}
 
 		.site-main-sign {
+			position: relative;
+			z-index: 10;
 			width: 140px;
 			float: right;
 			margin: 5px 0 0;

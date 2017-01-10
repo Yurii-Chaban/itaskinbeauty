@@ -1,0 +1,71 @@
+.gallery-more-page {
+	.wrapper {
+		padding: 0;
+	}
+
+	.inside-page-main-title {
+		@include inside-page-main-title;
+		text-transform: initial;
+	}
+
+	.mobile-version {
+		padding-bottom: 100px;
+
+		.album-description {
+			margin: 20px auto 0;
+			padding: 0 15px;
+			text-align: justify;
+			p {
+				padding: 0;
+				color: #000000;
+				font: 400 15px / 17px $Swiss721BT;
+			}
+		}
+
+		.gallery-more-mobile-slider {
+			margin: 25px auto 0;
+			* {
+				outline: none !important;
+			}
+
+			.gallery-more-item {
+				width: 320px;
+				height: 214px;
+				margin-right: 15px;
+				overflow: hidden;
+				position: relative;
+				@include transition;
+
+				&:before {
+					position: absolute;
+					content: "";
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					background-color: rgba(0, 0, 0, 0.3);
+					z-index: 0;
+				}
+
+				&:hover {
+					&:before {
+						z-index: -1;
+					}
+				}
+
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+
+			}
+		}
+	}
+
+}
