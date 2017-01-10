@@ -100,7 +100,7 @@
 
 			.thubnail-wrapper {
 				float: left;
-				margin: 0 25px 0 0;
+				margin: 4px 25px 0 0;
 				width: 305px;
 				height: 215px;
 			}
@@ -271,9 +271,10 @@
 			clear: both;
 			max-width: 730px;
 			float: right;
-			margin: 10px 0 0 0;
+			margin: 0;
 
 			.desctop-menu {
+				margin: 10px 0 0;
 				@include border-box;
 				overflow: hidden;
 
@@ -283,7 +284,7 @@
 
 					a {
 						display: block;
-						padding: 20px 7px 2px;
+						padding: 20px 7px 7px;
 						font: 400 14px / 16px $Swiss721BT;
 						color: #ffffff;
 						@include transition;
@@ -417,7 +418,7 @@
 					margin: 5px 9px 5px 0;
 					padding-left: 8px;
 					color: #b4b4b4;
-					font: 400 12px / 30px $Swiss721BT;
+					font: 600 12px / 30px "Arial", sans-serif;
 					@include border-box;
 				}
 				.submit-btn {
@@ -427,7 +428,7 @@
 					height: 30px;
 					margin: 5px 0 0;
 					color: #ffffff;
-					font: 400 16px / 30px $Swiss721BT;
+					font: 400 15px / 30px "Arial", sans-serif;
 					text-transform: uppercase;
 					border: 0;
 					background-color: #b30000;
@@ -556,7 +557,7 @@
 					bottom: 0;
 					left: 50%;
 					transform: translateX(-50%);
-					background-color: rgba(212,218,223, 0.9);
+					background-color: rgba(93,98,108, 0.6);
 					@include transition;
 
 
@@ -1317,7 +1318,7 @@
 				width: 100%;
 				margin: 0;
 				color: #ffffff;
-				font: 400 24px / 26px $Swiss721BT;
+				font: 400 24px / 26px "Arial", sans-serif;
 			}
 
 			.form-wrapper {
@@ -1330,7 +1331,7 @@
 				.program-email,
 				.message-field {
 					color: #5d5e5f;
-					font: 400 16px / 22px $Swiss721BT;
+					font: 400 16px / 22px "Arial", sans-serif;
 					margin: 3px 0;
 					@include border-box;
 					border: 0;
