@@ -1303,31 +1303,32 @@ footer .copyright .copyright-sign span {
 }
 /* line 26, ../sass/_contact-page.scss */
 .contact-page .title {
+  position: initial;
   margin: 15px 10px 35px;
 }
-/* line 30, ../sass/_contact-page.scss */
+/* line 31, ../sass/_contact-page.scss */
 .contact-page .get-info-block {
   display: none;
 }
-/* line 34, ../sass/_contact-page.scss */
+/* line 35, ../sass/_contact-page.scss */
 .contact-page .info-wrapper {
   overflow: hidden;
   width: 100%;
 }
-/* line 39, ../sass/_contact-page.scss */
+/* line 40, ../sass/_contact-page.scss */
 .contact-page .info-wrapper .map-info-block .row {
   padding: 0 15px;
 }
-/* line 43, ../sass/_contact-page.scss */
+/* line 44, ../sass/_contact-page.scss */
 .contact-page .info-wrapper .map-info-block .get-direction {
   margin: 40px 15px 50px 0;
 }
-/* line 49, ../sass/_contact-page.scss */
+/* line 50, ../sass/_contact-page.scss */
 .contact-page .get-info-block-mobile {
   margin: 30px auto 10px;
   padding: 0 15px;
 }
-/* line 53, ../sass/_contact-page.scss */
+/* line 54, ../sass/_contact-page.scss */
 .contact-page .get-info-block-mobile .title {
   float: initial;
   margin: 30px 0 15px;
@@ -1344,11 +1345,11 @@ footer .copyright .copyright-sign span {
   background-image: repeating-linear-gradient(to bottom right, #f80000 1%, #e0e0e0 98.6%);
   background-image: -ms-repeating-linear-gradient(top left, #f80000 1%, #e0e0e0 98.6%);
 }
-/* line 71, ../sass/_contact-page.scss */
+/* line 72, ../sass/_contact-page.scss */
 .contact-page .get-info-block-mobile .form-wrapper {
   overflow: hidden;
 }
-/* line 73, ../sass/_contact-page.scss */
+/* line 74, ../sass/_contact-page.scss */
 .contact-page .get-info-block-mobile .form-wrapper .name-field,
 .contact-page .get-info-block-mobile .form-wrapper .phone-field,
 .contact-page .get-info-block-mobile .form-wrapper .email-email,
@@ -1367,7 +1368,7 @@ footer .copyright .copyright-sign span {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 88, ../sass/_contact-page.scss */
+/* line 89, ../sass/_contact-page.scss */
 .contact-page .get-info-block-mobile .form-wrapper .submit-btn {
   display: block;
   float: right;
