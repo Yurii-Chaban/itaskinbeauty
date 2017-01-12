@@ -490,6 +490,11 @@
 			top: -55px;
 		}
 
+		&.gallery-page-program-section {
+			background: #ffffff;
+			padding: 0 0 50px;
+		}
+
 		.program-title {
 			float: initial;
 			margin: 0 auto 65px;
@@ -638,6 +643,14 @@
 			background-repeat: no-repeat;
 			background-position: 47% 20%;
 			z-index: 1;
+		}
+
+		&.gallery-map {
+			&:before {
+				background-image: url("../images/gallery-page-img.png");
+				height: 150px;
+				top: -30px;
+			}
 		}
 
 		.title {
