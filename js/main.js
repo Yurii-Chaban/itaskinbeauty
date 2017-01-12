@@ -312,3 +312,20 @@ jQuery(document).ready(function($){
 		}
 	});
 });
+
+$(document).ready(function() {
+	$(".sub-menu-mobile > a")['on']("click", function(){
+
+		if ($(this).parent().children(".sub-menu-block").css("display") == "none"){
+			$(".sub-menu-block").css("display","none");
+			$(".back-visible").css("display","none");
+
+
+			$(this).parent().children(".sub-menu-block").css({"display" : "block"});
+			$(this).parent().children(".back-visible").css({"display" : "block"});
+
+			return false;
+		}
+
+	});
+});

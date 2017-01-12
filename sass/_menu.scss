@@ -198,7 +198,7 @@ h1 {
   }
   ul {
     float: right;
-    width: 220px;
+    width: 270px;
     list-style: none;
     padding: 0;
     margin: 0 20px 0 0;
@@ -235,6 +235,35 @@ h1 {
         color: #ce4545;
       }
     }
+    .sub-menu-mobile {
+      overflow: hidden;
+      & > a {
+        float: right;
+      }
+
+      .back-visible {
+        float: left;
+        color: #ff0000;
+        font: 400 18px / 26px $Swiss721BT;
+        display: none;
+
+        a {
+          color: #ff0000;
+        }
+      }
+    }
+  }
+  .sub-menu-block {
+    display: none;
+  }
+  .submenu-list {
+    margin-right: 0;
+    li {
+      a {
+        color: #454748;
+        font: 400 16px / 26px $Swiss721BT;
+      }
+    }
   }
   .mobile-services {
     li {
@@ -251,6 +280,10 @@ h1 {
       a {
         color: #454545;
         font: 700 22px / 32px $Swiss721BT;
+
+        &:hover {
+          color: #ab4c4c;
+        }
       }
     }
   }

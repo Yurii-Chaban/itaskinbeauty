@@ -44,6 +44,51 @@ header {
 			}
 		}
 	}
+	@media (max-width: 1023px) {
+		.top-nav {
+			display: flex;
+			float: right;
+			position: relative;
+			z-index: 101;
+
+
+			.site-main-sign {
+				margin: 5px 10px 0 20px;
+
+			}
+			.lenguages-block {
+				display: block;
+				z-index: 10;
+				position: relative;
+				float: right;
+				width: 40px;
+
+				.ui.search.dropdown {
+					min-width: 2.7em;
+					padding: .8em 0 .4em 0;
+					min-height: 1em;
+					background: none;
+					box-shadow: none;
+					border: 0;
+				}
+				.ui.selection.dropdown>.dropdown.icon {
+					top: .3em;
+					padding: 1.5em 0 .78571429em 0;
+				}
+				.ui.search.dropdown>.text {
+					cursor: text;
+					position: relative;
+					left: 1px;
+					z-index: 3;
+					color: #475056;
+					font: 400 13px / 13px $OpenSans;
+				}
+				.ui.selection.dropdown .menu>.item {
+					padding: .5rem .4rem!important;
+				}
+			}
+		}
+	}
 	/*---------------------------------------------------*/
 
 	.call-us-block {
