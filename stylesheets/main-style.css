@@ -1562,6 +1562,10 @@ footer .copyright .copyright-sign span {
 .gallery-page .desctop-version {
   display: none;
 }
+/* line 77, ../sass/_gallery-page.scss */
+.gallery-page .cd-popup-container {
+  color: transparent;
+}
 
 /*--------------------------------------------------------------
 # gallery more page
@@ -1647,6 +1651,10 @@ footer .copyright .copyright-sign span {
 .gallery-more-page .mobile-version .gallery-more-mobile-slider .gallery-more-item img {
   width: 100%;
   height: auto;
+}
+/* line 70, ../sass/_gallery-more-page.scss */
+.gallery-more-page .cd-popup-container {
+  color: transparent;
 }
 
 /*--------------------------------------------------------------
