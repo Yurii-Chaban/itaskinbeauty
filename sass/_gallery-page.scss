@@ -74,12 +74,8 @@
 		display: none;
 	}
 
-	.cd-popup-container {
-		.cd-popup.is-visible {
-			.slider-wrapper {
-				color: rgba(0, 0, 0, 0);
-				font-size: 0;
-			}
-		}
+	.cd-popup.is-visible {
+		color: rgba(0, 0, 0, 0);
+		font-size: 0;
 	}
 }
