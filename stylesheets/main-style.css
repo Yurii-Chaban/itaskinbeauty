@@ -1562,9 +1562,10 @@ footer .copyright .copyright-sign span {
 .gallery-page .desctop-version {
   display: none;
 }
-/* line 77, ../sass/_gallery-page.scss */
-.gallery-page .cd-popup-container {
+/* line 79, ../sass/_gallery-page.scss */
+.gallery-page .cd-popup-container .cd-popup.is-visible .slider-wrapper {
   color: transparent;
+  font-size: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1652,8 +1653,8 @@ footer .copyright .copyright-sign span {
   width: 100%;
   height: auto;
 }
-/* line 70, ../sass/_gallery-more-page.scss */
-.gallery-more-page .cd-popup-container {
+/* line 72, ../sass/_gallery-more-page.scss */
+.gallery-more-page .cd-popup-container .cd-popup.is-visible .slider-wrapper {
   color: transparent;
   font-size: 0;
 }

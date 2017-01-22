@@ -68,8 +68,11 @@
 		}
 	}
 	.cd-popup-container {
-		color: rgba(0, 0, 0, 0);
-		font-size: 0;
+		.cd-popup.is-visible {
+			.slider-wrapper {
+				color: rgba(0, 0, 0, 0);
+				font-size: 0;
+			}
+		}
 	}
-
 }
