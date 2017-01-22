@@ -1655,6 +1655,7 @@ footer .copyright .copyright-sign span {
 /* line 70, ../sass/_gallery-more-page.scss */
 .gallery-more-page .cd-popup-container {
   color: transparent;
+  font-size: 0;
 }
 
 /*--------------------------------------------------------------
