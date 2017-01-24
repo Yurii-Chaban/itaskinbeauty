@@ -264,7 +264,7 @@
 				<ul class="gallery-list">
 					<li>
 						<div class="gallery-item fancybox-single fancybox-single">
-							<a href="#0" class="cd-popup-trigger gallery-thubnail-wrapper">
+							<a onclick="openPopup('#popup1')" href="#" class="cd-popup-trigger gallery-thubnail-wrapper">
 								<img src="images/gallery-album-item.jpg" alt="gallery thubnail">
 							</a>
 							<a href="#0" class="cd-popup-trigger album-title">Album 01</a>
@@ -272,7 +272,7 @@
 					</li>
 					<li>
 						<div class="gallery-item fancybox-single">
-							<a href="#0" class="cd-popup-trigger gallery-thubnail-wrapper">
+							<a onclick="openPopup('#popup2')" href="#" class="cd-popup-trigger gallery-thubnail-wrapper">
 								<img src="images/gallery-album-item.jpg" alt="gallery thubnail">
 							</a>
 							<a href="#0" class="cd-popup-trigger album-title">Album 01</a>
@@ -335,10 +335,10 @@
 						</div>
 					</li>
 				</ul>
-				<div class="cd-popup" role="alert">
+				<div id="popup1" class="cd-popup" role="alert">
 					<div class="cd-popup-container">
 						<div class="slider-wrapper">
-							<div id="ninja-slider">
+							<div id="ninja-slider" class="ninja-slider">
 								<div class="slider-inner">
 									<ul>
 										<li>
@@ -363,7 +363,66 @@
 									<div class="fs-icon" title="Expand/Close"></div>
 								</div>
 							</div>
-							<div id="thumbnail-slider">
+							<div id="thumbnail-slider" class="thumbnail-slider">
+								<div class="inner">
+									<ul>
+										<li>
+											<a class="thumb" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="thumb" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="thumb" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="thumb" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="thumb" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="thumb" href="images/big-img.jpg"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="description">
+							<p>Lorem ipsum dolor sit amet, venenatis sollicitudin tincidunt turpis dui vitae, vel vitae id non rutrum, tortor iaculis dolor vel et, ipsum odio orci taciti nunc aenean, scelerisque condimentum lacinia tortor mattis. Tellus nostra fermentum lobortis, vitae aliquam, tempus sit metus vivamus alias vehicula, vehicula vitae. Dui nulla quasi porta. Lectus in quis sed sodales dolor, eget accumsan, condimentum neque auctor urna id sit vitae, et nec vel orci adipiscing ut. Vel lacus, eu ut ut magna magnis quam adipiscing, ultrices scelerisque, bibendum sed integer et nunc. Cursus excepturi est. Quis malesuada congue leo arcu non fusce, ante in, libero urna nulla, condimentum in inceptos et imperdiet rutrum. Habitasse suscipit integer convallis, in libero, sem penatibus magna, ullamcorper enim. Lacinia dapibus eget, ipsum integer dui mauris arcu, fusce cras porta mauris ante lacinia, leo aliquam sit vestibulum sapien phasellus, volutpat sodales nostrud. Id sed duis varius egestas nulla, viverra consectetuer vestibulum sapien. In elit integer amet. At integer, nullam venenatis accumsan aliquip tempor.a</p>
+						</div>
+						<a href="#0" class="cd-popup-close img-replace">Close</a>
+					</div>
+				</div>
+				<div id="popup2" class="cd-popup" role="alert">
+					<div class="cd-popup-container">
+						<div class="slider-wrapper">
+							<div id="ninja-slider2" class="ninja-slider">
+								<div class="slider-inner">
+									<ul>
+										<li>
+											<a class="ns-img" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="ns-img" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="ns-img" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="ns-img" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="ns-img" href="images/big-img.jpg"></a>
+										</li>
+										<li>
+											<a class="ns-img" href="images/big-img.jpg"></a>
+										</li>
+									</ul>
+									<div class="fs-icon" title="Expand/Close"></div>
+								</div>
+							</div>
+							<div id="thumbnail-slider2" class="thumbnail-slider">
 								<div class="inner">
 									<ul>
 										<li>

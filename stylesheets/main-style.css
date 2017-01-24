@@ -3401,22 +3401,22 @@ footer .copyright .copyright-sign span {
     background-color: #ffffff;
   }
   /* line 1682, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider {
     width: 625px;
     height: 455px;
   }
   /* line 1687, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider .slider-inner ul {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider .slider-inner ul {
     overflow: hidden;
     padding-top: 0 !important;
     height: 455px !important;
   }
   /* line 1692, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider .slider-inner .fs-icon {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider .slider-inner .fs-icon {
     display: none;
   }
   /* line 1697, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider #ninja-slider-prev, .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider #ninja-slider-next {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider #ninja-slider-prev, .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider #ninja-slider-next {
     width: 35px;
     height: 35px;
     line-height: 35px;
@@ -3426,16 +3426,16 @@ footer .copyright .copyright-sign span {
     border-radius: 50%;
   }
   /* line 1707, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider #ninja-slider-prev {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider #ninja-slider-prev {
     left: 15px;
   }
   /* line 1710, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider #ninja-slider-next {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider #ninja-slider-next {
     right: 15px;
   }
   /* line 1713, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider #ninja-slider-prev::before,
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider #ninja-slider-next::before {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider #ninja-slider-prev::before,
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider #ninja-slider-next::before {
     top: 8px;
     content: "";
     width: 15px;
@@ -3444,15 +3444,15 @@ footer .copyright .copyright-sign span {
     border-top: 2px solid #070201;
   }
   /* line 1722, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider #ninja-slider-prev::before {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider #ninja-slider-prev::before {
     left: 10px;
   }
   /* line 1725, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #ninja-slider #ninja-slider-next::before {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .ninja-slider #ninja-slider-next::before {
     right: 10px;
   }
   /* line 1730, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #thumbnail-slider {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .thumbnail-slider {
     height: auto;
     max-height: 50px;
     z-index: 1;
@@ -3460,19 +3460,19 @@ footer .copyright .copyright-sign span {
     right: -50px;
   }
   /* line 1738, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #thumbnail-slider ul li {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .thumbnail-slider ul li {
     opacity: 1;
     display: block;
     border: 1px solid transparent;
     margin: 4px 1px;
   }
   /* line 1747, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #thumbnail-slider div.inner {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .thumbnail-slider div.inner {
     background: transparent;
   }
   /* line 1752, ../sass/_media.scss */
-  .gallery-page .cd-popup.is-visible .slider-wrapper #thumbnail-slider #thumbnail-slider-prev,
-  .gallery-page .cd-popup.is-visible .slider-wrapper #thumbnail-slider #thumbnail-slider-next {
+  .gallery-page .cd-popup.is-visible .slider-wrapper .thumbnail-slider #thumbnail-slider-prev,
+  .gallery-page .cd-popup.is-visible .slider-wrapper .thumbnail-slider #thumbnail-slider-next {
     display: none;
   }
   /* line 1759, ../sass/_media.scss */
